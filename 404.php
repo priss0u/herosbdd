@@ -2,7 +2,7 @@
 require_once 'partials/head.php';
 ?>
 
-<h1><p>Prissou Mandez <p></h1>
+<h1>Page non trouvé !</h1>
 
 <?php
 require_once 'partials/footer.php';
