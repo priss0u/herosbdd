@@ -5,6 +5,7 @@
 // Le chemin dans l'URL (comme '/') est relié au contrôleur correspondant (comme 'HomeController.php')
 $routes = [
     '/' => 'HomeController.php',
+    '/register' => 'RegisterController.php',
 ];
 
 // Récupération de l'URI actuelle de la requête utilisateur
