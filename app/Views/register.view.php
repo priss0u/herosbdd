@@ -1,31 +1,45 @@
 <?php 
 require_once(__DIR__ . '/partials/head.php');
 ?>
-<h1 class = "text-center">Formulaire d'inscription</h1>
-
-<div class = "container ">
-    <form action="" method = "">
-        <div class="mb-3">
-            <label for="exampleInputEmail1" class="form-label">Email</label>
-            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-            <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+<h1>Inscription</h1>
+<form method="POST">
+    <div class="container">
+        <div class="form-group">
+            <label for="pseudo" class="form-label">Donne moi ton pseudo :</label>
+            <input type="text" name="pseudo" id="pseudo" placeholder="Toto" class="form-control">
+            <?php 
+            if(isset($arrayError['pseudo'])){
+                ?>
+                    <p class="text-danger"><?= $arrayError['pseudo']?></p>
+                <?php
+            }
+            ?>
         </div>
-
-        <div class="mb-3 form-check">
-            <label for="exampleInputEmail1" class="form-label">Pseudo</label>
-            <input type="pseudo" class="form-control" id="exampleInputpseudo" aria-describedby="pseudo">
+        <div class="form-group">
+            <label for="email" class="form-label">Donne moi ton email :</label>
+            <input type="email" name="email" id="email" placeholder="Toto@gmail.com" class="form-control">
+            <?php 
+            if(isset($arrayError['email'])){
+                ?>
+                    <p class="text-danger"><?= $arrayError['email']?></p>
+                <?php
+            }
+            ?>
         </div>
-        
-        <div class="mb-3">
-            <label for="exampleInputPassword1" class="form-label">Password</label>
-            <input type="password" class="form-control" id="exampleInputPassword1">
+        <div class="form-group">
+            <label for="password" class="form-label">Donne moi ton mot de pase :</label>
+            <input type="password" name="password" id="password" class="form-control">
+            <?php 
+            if(isset($arrayError['password'])){
+                ?>
+                    <p class="text-danger"><?= $arrayError['password']?></p>
+                <?php
+            }
+            ?>
         </div>
-
-        <button type="submit" class="btn btn-primary">Submit</button>
-    </form>
-</div>
+        <button type="submit" class="btn btn-success mt-5">Inscription</button>
+    </div>
+</form>
 
 <?php 
 require_once(__DIR__ . '/partials/footer.php');
-?>
-
