@@ -1,4 +1,5 @@
 <?php 
+require_once (__DIR__ . "/database.php");
 
 // Définition des routes
 // Ce tableau associe des chemins d'URI à des fichiers de contrôleurs spécifiques
