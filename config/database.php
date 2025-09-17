@@ -7,9 +7,9 @@ try {
         "root",
         "admin"
     );
-    echo "Connexion réussie ✅";
+    //echo "Connexion réussie ✅";
 
 } catch (PDOException $e) {
     // Gestion d'erreur
-    echo "Erreur de connexion ❌ : " . $e->getMessage();
-}
+    die("Erreur de connexion ❌ : " . $e->getMessage());
+};
