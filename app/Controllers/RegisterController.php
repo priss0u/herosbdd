@@ -45,4 +45,4 @@ if(isset($_POST['pseudo'])){
 }else{
 
     require_once( __DIR__ . "/../Views/register.view.php" );
-}+
+}
