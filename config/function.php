@@ -27,7 +27,7 @@
 
     }
 
-
+    //C'est un var_dump plus stylé 😁
     function debug ($info){
         echo '<pre>';
         var_dump($info);
