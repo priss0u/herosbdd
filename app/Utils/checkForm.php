@@ -21,10 +21,10 @@ function checkFormat($nameInput, $value){
     global $arrayError;
 
     //Vos regex = vos filtres
-    $regexPseudo = '/^([0-9a-z_\-.A-Zà-üÀ-Ü]){3,255}$/';
+    $regexPseudo = '/^([0-9a-z_\-.A-Zà-üÀ-Ü\ ]){3,255}$/';
     $regexPassword = '/^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[#?!@$%^&*-]).{8,}$/';
-    $regexPower = '/^([a-z_\-.A-Zà-üÀ-Ü ]){3,255}$/';
-    $regexDescription = '/^[a-zA-Z ,!?;.:()<>$@£\'"-_°€&%#<>\-+\/0-9]{1,1000}$/';
+    $regexPower = '/^[a-z_\-\'.A-Zà-üÀ-Ü\ œ]{3,255}$/';
+    $regexDescription = '/^[a-zA-Zà-üÀ-Ü ,!?;.:()<>$@£\'\"\-_°€&%#<>\-+\/0-9œ]{1,1000}$/';
     $regexImg = '/^([0-9a-z_\-.A-Zà-üÀ-Ü]){0,255}$/';
 
     //on prend le nom de l'input
