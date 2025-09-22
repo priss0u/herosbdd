@@ -14,7 +14,8 @@ $routes = [
     '/logout' => 'LogoutController.php',
     //Les Heros
     '/addheros' => 'AddHerosController.php',
-    '/hero' =>'HeroController.php'
+    '/hero' =>'HeroController.php',
+    '/edithero' =>'EditHeroController.php',
 ];
 
 // Récupération de l'URI actuelle de la requête utilisateur
